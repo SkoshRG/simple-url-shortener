@@ -1,0 +1,287 @@
+* {
+  font-family: 'Inconsolata', monospace;
+}
+
+.clearfix {
+  display: table;
+  clear: both;
+  content: " ";
+}
+
+header {
+  width: 100%;
+  background: #3498db;
+  color: #fff;
+  height: 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1001;
+}
+
+header h1 a {
+  display: block;
+  text-align: left;
+}
+
+header h1 {
+  margin: 0 auto;
+}
+
+.left {
+  float: left;
+}
+
+.logo {
+  height: 100%;
+  margin-left: 1em;
+}
+
+.logo h1 a {
+  color: #fff;
+  line-height: 50px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.nav {
+  width: auto;
+  height: 100%;
+  margin: 0 auto;
+  margin-right: 1em;
+}
+
+.nav ul {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  text-decoration: none;
+}
+
+.nav ul li {
+  width: 50%;
+  float: left;
+  list-style: none;
+  text-decoration: none;
+  color: #fff;
+  height: 100%;
+  width: auto;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  line-height: 50px;
+  padding: 0px 10px;
+  height: 100%;
+  width: auto;
+}
+
+.right {
+  float: right;
+}
+
+.first {
+  background: #ecf0f1;
+  margin-bottom: -1px;
+}
+
+.second {
+  background: #e6e6e6;
+  margin-bottom: -1px;
+}
+
+
+
+
+
+
+
+
+
+
+.container {
+  width: 100%;
+}
+
+.second-header {
+  height: 200px;
+  background: #2980b9;
+  position: fixed;
+  top: 50px;
+  left: 0;
+  margin: 0 auto;
+  width: 100%;
+  color: #fff;
+  z-index: -1;
+  text-align: center;
+  margin-bottom: 200px;
+}
+
+.second-header div {
+  width: auto;
+}
+
+.shortener-section {
+  margin: 0 auto;
+  margin-top: 250px;
+  margin-bottom: -1px;
+}
+
+.shortener-section div {
+  width: 75%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.about div {
+  width: 50%;
+  margin: 0 auto;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.open-source div {
+  width: 50%;
+  margin: 0 auto;
+  padding: 10px 0;
+  text-align: center;
+}
+
+
+/*
+
+URL Shortener Section
+
+*/
+
+input::-webkit-input-placeholder, button {
+  font-family: 'roboto', sans-serif;
+  -webkit-transition: all 0.3s ease-in-out;
+          transition: all 0.3s ease-in-out;
+}
+
+input {
+  margin: 40px 0;
+  width: 200px;
+  display: inline-block;
+  border: none;
+  padding: 10px 0;
+  border-bottom: solid 1px #2980b9;
+  -webkit-transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+          transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 96%, #2980b9 4%);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 96%, #2980b9 4%);
+  background-position: -200px 0;
+  background-size: 200px 100%;
+  background-repeat: no-repeat;
+  color: #2980b9;
+}
+input:focus, input:valid {
+  box-shadow: none;
+  outline: none;
+  background-position: 0 0;
+}
+input:focus::-webkit-input-placeholder, input:valid::-webkit-input-placeholder {
+  color: #2980b9;
+  font-size: 11px;
+  -webkit-transform: translateY(-20px);
+          transform: translateY(-20px);
+  visibility: visible !important;
+}
+
+button {
+  border: none;
+  background: #2980b9;
+  cursor: pointer;
+  border-radius: 3px;
+  padding: 6px;
+  margin-bottom: 40px;
+  width: 200px;
+  color: white;
+  margin-left: 25px;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
+}
+button:hover {
+  -webkit-transform: translateY(-3px);
+      -ms-transform: translateY(-3px);
+          transform: translateY(-3px);
+  box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.2);
+}
+
+footer h1 {
+  margin: 0;
+  padding: .5em;
+  text-align: center;
+}
+
+
+/*
+MEDIA QUERIES
+*/
+
+@media screen and (max-width: 630px) {
+  header {
+    height: 100px;
+  }
+
+  .logo {
+    width: 100%;
+    height: 50%;
+    margin-left: 0;
+  }
+
+  .nav {
+    height: 50%;
+    width: 100%;
+    text-align: center;
+    margin-right: 0;
+  }
+
+  .nav ul {
+    display: inline-block;
+  }
+
+  .second-header {
+    top: 100px;
+  }
+
+  .shortener-section {
+    margin-top: 300px;
+  }
+
+  footer h1 {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 595px) {
+  .shortener-section div {
+    width: 50%;
+  }
+
+  .shortener-section div button {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .logo h1, .second-header div h1, footer h1 {
+    font-size: 24px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+
+*/

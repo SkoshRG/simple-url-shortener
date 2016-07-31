@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Simple URL Shortener</title>
+    <meta name="google" content="notranslate" />
+    <meta name="description" content="Simple URL Shortener is a simple url shortener. no ads, no wait time." />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script src="js/smooth-scroll.js"></script>
+    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/hover.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <header>
+      <div class="left logo">
+        <h1><a href="./">Simple URL Shortener</a></h1>
+      </div>
+      <div class="right nav">
+        <ul>
+          <li class="about"><a data-scroll href="#about" class="hvr-bounce-to-right">About</a></li>
+          <li><a data-scroll href="#open-source" class="hvr-bounce-to-right">Open Source</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- CONTAINER -->
+    <div class="container">
+      <div class="second-header">
+        <div>
+          <h1>Simple URL Shortener</h1>
+          <p>Simple URL Shortener is what the name says. A simple URL shortener.<br>Quick to use, no ads, 100% free. <br>Shorten your first link below!</p>
+        </div>
+      </div>
+      <div class="shortener-section first">
+        <div>
+          <input placeholder="URL" type="text" required id="link-to-shorten">
+          <button id="shorten">Shorten</button>
+          <h3 id="shortened-link" style="margin: 0; padding: 0 0 25px; display: none;">shortened link: (shortened link)</h3>
+        </div>
+      </div>
+      <div class="about second" id="about">
+        <div>
+          <h1>About</h1>
+          <p>
+            Simple URL Shortener is a really simple URL shortener. It's open source so anyone can look at the code on GitHub. This website is just a quick project i put together because it seemed like a nice challenge.
+          </p>
+        </div>
+      </div>
+      <div class="open-source first" id="open-source">
+        <div>
+          <h1>Open Source</h1>
+          <p>
+            The best thing about Simple URL Shortener is that it's open source! It's licensed under the MIT License so you can do whatever you want with it.
+          </p>
+        </div>
+      </div>
+      <div class="open-source second" id="api">
+        <div>
+          <h1>API</h1>
+          <p>
+            Simple URL Shortner has a very simple API you can use to shorten links.<br>No API key needed.
+          </p>
+          <div class="api-usage" style="width: 100%;">
+            <h3 style="text-align: left;">Usage:</h3>
+            <h5>URL: http://surls.ga/shorten.php</h5>
+            <h5>Parameters:</h5>
+            <p>
+              The request needs to be POST and the only parameter is <span style="background: gray; color: #fff; padding: 1px 2px 1px; border-radius: 2px;">shorten</span> which takes the URL to shorten.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="clearfix"></div>
+    <footer class="first">
+      <h1>Copyright (c) Simple URL Shortener 2016, All Rights Reserved.</h1>
+    </footer>
+    <script>
+    smoothScroll.init();
+    </script>
+  </body>
+</html>
