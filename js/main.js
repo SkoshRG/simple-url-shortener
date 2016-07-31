@@ -12,8 +12,8 @@ $(document).ready(function() {
         });
       });
     } else {
-      console.log("Link is not valid.");
-      // TODO: Alert person that link is invalid
+      $('#shortened-link').text('Please enter a valid URL.');
+      $('#shortened-link').css('display', 'block');
     }
   });
 });
