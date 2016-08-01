@@ -1,9 +1,5 @@
 <?php
 
-if($_SERVER['REQUEST_METHOD'] !== 'POST') {
-  header("Location: ./");
-}
-
 require 'default.php';
 
 $db = getDB();

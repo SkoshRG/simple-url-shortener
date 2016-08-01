@@ -5,6 +5,7 @@ function getDB() {
   $dbName  = 'url_shortener';
   $dbUser   = 'root';
   $dbPass   = '';
+  
 
   $db = new mysqli($dbHost, $dbUser, $dbPass, $dbName);
   if($db->connect_error) {

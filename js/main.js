@@ -1,3 +1,4 @@
+
 $(document).ready(function() {
   $('#shorten').on('click', function () {
     var link = $('#link-to-shorten').val();
